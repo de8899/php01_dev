@@ -4,9 +4,14 @@ body {
   
   h1 {
     color: green;
-    margin-left: 20px;
+    margin-left: 8px;
   }
 
   h1.impact {
     font-family: Impact,Courier, monospace;
+  }
+
+  p {
+    color: white;
+    margin-left: 20px;
   }

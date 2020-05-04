@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color:black;
   }
   
   h1 {
@@ -7,7 +7,7 @@ body {
     margin-left: 8px;
   }
 
-  h1.impact {
+  h1 {
     font-family: Courier, monospace;
   }
 

@@ -6,6 +6,7 @@
 <body>
 
 <h1>PHP test site 1</h1>
+<p>version 1.1</p>
 
 <?php
 echo "PHP Block here...";

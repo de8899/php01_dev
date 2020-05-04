@@ -9,7 +9,7 @@
 <p>version 1.1</p>
 
 <?php
-echo <h1>"PHP Block here..."</h1>;
+echo <p>"PHP Block here..."</p>;
 ?>
 
 </body>

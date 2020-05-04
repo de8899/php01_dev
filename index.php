@@ -5,12 +5,12 @@
 </head>
 <body>
 
-<h1>PHP site 1</h1>
+<h1>PHP site 01</h1>
 
 <?php
 echo "<p> <font color=blue size='5pt'>php block start/end </font> </p>";
 ?>
 
-<p>version 1.1</p>
+<p>version 1.2</p>
 </body>
 </html> 

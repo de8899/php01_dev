@@ -5,12 +5,12 @@
 </head>
 <body>
 
-<h1>PHP test site 1</h1>
-<p>version 1.1</p>
+<h1>PHP site 1</h1>
 
 <?php
-echo <p>"PHP Block here..."</p>;
+echo "<p> <font color=blue size='5pt'>php block start/end </font> </p>";
 ?>
 
+<p>version 1.1</p>
 </body>
 </html> 

@@ -8,9 +8,9 @@
 <h1>Welcome to PHP site 01!</h1>
 
 <?php
-echo "<p> <font color=blue size='5pt'>php block start/end </font> </p>";
+echo "<p> <font color=blue size='5pt'>php line of text </font> </p>";
 ?>
 
-<p>version 1.2</p>
+<p>version 1.3</p>
 </body>
 </html> 

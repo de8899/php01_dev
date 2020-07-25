@@ -11,6 +11,6 @@
 echo "<p> <font color=blue size='5pt'>php line of text </font> </p>";
 ?>
 
-<p>version 1.3</p>
+<p>version 1.4</p>
 </body>
 </html> 

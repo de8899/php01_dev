@@ -38,7 +38,7 @@ Link to Github repo
 */
 
 $cmd1 = 'uptime';
-$out1 = "<p><pre>".shell_exec($cmd1)."</pre></p>";
+$out1 = "<p>""<pre>".shell_exec($cmd1)."</pre>""</p>";
 echo "<p>"."Server uptime info: $out1"."</p>";
 //echo "<br />";
 

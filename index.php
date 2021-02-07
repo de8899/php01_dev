@@ -31,10 +31,6 @@ Commits to the repo immediately update the site.
 <?php
 
 // pre enables all of the output to be captured if muliple lines. 
-//notice that the star and fwd slash is for multiline comments.
-/* try to display some OS stuff obtained via bash cmds.
- we are adding p tags to get the fomatting from the css block above. 
-*/
 
 $cmd0 = 'cat /etc/os-release | grep -i \'pretty\' | cut -d "=" -f2';
 $out0 = "<pre>".shell_exec($cmd0)."</pre>";

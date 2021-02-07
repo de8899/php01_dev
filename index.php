@@ -2,18 +2,19 @@
 <html>
 <head>
 <style>
-body {
-  background-color: grey;
-}
 
+body {
+  background-color: Black;
+}
 h1 {
-  color: black;
+  font-family: helvetica;
+  color: green;
   text-align: left;
 }
-
 p {
   font-family: helvetica;
-  font-size: 16px;
+  font-size: 20px;
+  color: white;
 }
 </style>
 </head>

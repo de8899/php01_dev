@@ -52,7 +52,7 @@ $out3 =  "<pre>".shell_exec($cmd3)."</pre>";
 echo "<p>"."$out3"."</p>";
 
 #$cmd4 = 'less /proc/meminfo | head -2';
-$cmd4 = 'free -m | head -1';
+$cmd4 = 'vmstat';
 $out4 = "<pre>".shell_exec($cmd4)."</pre>";
 echo "<p>"."Memory: $out4"."</p>";
 

@@ -20,12 +20,14 @@ p {
 <body>
 
 <h1>AzureWebSites WebApp Server Info</h1>
-<h2>
+
+<p>
 The code for this page is pulled directly from a github repo.
 New commits to the repo are automatically pulled to update the site within 1 minute. 
-repo: https://github.com/de8899/php01_dev
+Link to Github repo
+</p>
+<a href="https://github.com/de8899/php01_dev/index.php">Link to Github repo</a>
 
-</h2>
 <?php
 
 // pre enables all of the output to be captured if muliple lines.

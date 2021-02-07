@@ -4,7 +4,7 @@
 <style>
 
 body {
-  background-color: Black;
+  background-color: white;
 }
 h1 {
   font-family: 'Courier New';
@@ -14,7 +14,7 @@ h1 {
 p {
   font-family: 'Courier New';
   font-size: 20px;
-  color: white;
+  color: black;
 }
 </style>
 </head>
@@ -49,8 +49,7 @@ echo "<p>"."CPU: $out2"."</p>";
 
 $cmd3 = 'lscpu | grep \'MHz\'';
 $out3 =  "<pre>".shell_exec($cmd3)."</pre>";
-echo "<p>"."CPU Speed: "."</p>";
-echo "<p style="background-color:tomato;">"."$out3"."</p>";
+echo "<p>"."CPU Speed: $out3 "."</p>";
 //echo "<br />";
 
 $cmd4 = 'cat /etc/resolv.conf';

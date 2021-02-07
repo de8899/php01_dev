@@ -13,9 +13,10 @@ h1 {
 }
 p {
   font-family: 'Courier New';
-  font-size: 20px;
+  font-size: 12px;
   color: black;
 }
+
 </style>
 </head>
 <body>

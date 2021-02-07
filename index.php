@@ -19,8 +19,13 @@ p {
 </head>
 <body>
 
-<h1>Server Info</h1>
+<h1>AzureWebSites WebApp Server Info</h1>
+<h2>
+The code for this page is pulled directly from a github repo.
+New commits to the repo are automatically pulled to update the site within 1 minute. 
+repo: https://github.com/de8899/php01_dev
 
+</h2>
 <?php
 
 // pre enables all of the output to be captured if muliple lines.
@@ -30,6 +35,8 @@ p {
 /* try to display some OS stuff obtained via bash cmds.
  we are adding p tags to get the fomatting from the css block above.
 */
+
+
 
 $cmd1 = 'uptime';
 $out1 = "<pre>".shell_exec($cmd1)."</pre>";
@@ -43,7 +50,7 @@ echo "<br />";
 
 $cmd3 = 'lscpu | grep \'MHz\'';
 $out3 =  "<pre>".shell_exec($cmd3)."</pre>";
-echo "<p>"."Speed of the CPU is: $out3"."</p>";
+echo "<p>"."CPU Speed: $out3"."</p>";
 echo "<br />";
 
 $cmd4 = 'cat /etc/resolv.conf';

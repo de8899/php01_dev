@@ -43,7 +43,7 @@ echo  "<p>"."Server uptime info: $out1"."</p>";
 //echo "<br />";
 
 $cmd2 = 'lscpu | grep \'Model name\'';
-$out2= "<pre>".shell_exec("$cmd2")."</pre>";
+$out2= "<pre>".shell_exec($cmd2)."</pre>";
 echo "<p>"."CPU: $out2"."</p>";
 //echo "<br />";
 

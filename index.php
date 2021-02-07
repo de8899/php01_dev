@@ -8,7 +8,7 @@ body {
 }
 h1 {
   font-family: helvetica;
-  color: green;
+  color: Blue;
   text-align: left;
 }
 p {
@@ -38,7 +38,7 @@ Link to Github repo
 */
 
 $cmd1 = 'uptime';
-$out1 = "<pre>".shell_exec($cmd1)."</pre>";
+$out1 = "<p><pre>".shell_exec($cmd1)."</pre></p>";
 echo "<p>"."Server uptime info: $out1"."</p>";
 //echo "<br />";
 

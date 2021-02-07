@@ -50,7 +50,7 @@ echo "<p>"."CPU: $out2"."</p>";
 $cmd3 = 'lscpu | grep \'MHz\'';
 $out3 =  "<pre>".shell_exec($cmd3)."</pre>";
 echo "<p>"."CPU Speed: "."</p>";
-echo $out3;
+echo "<p style="background-color:tomato;">".$out3."</p>";
 //echo "<br />";
 
 $cmd4 = 'cat /etc/resolv.conf';

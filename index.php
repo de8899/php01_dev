@@ -8,7 +8,7 @@ body {
 }
 h1 {
   font-family: 'Courier New';
-  color: #00ccff;
+  color: #00b2ff;
   text-align: left;
 }
 p {
@@ -27,7 +27,7 @@ The code for this page is pulled directly from a github repo.
 New commits to the repo are automatically deployed to update the site within 1 minute. 
 Link to Github repo
 </p>
-<a href="https://github.com/de8899/php01_dev/index.php">Link to Github repo</a>
+<a href="https://github.com/de8899/php01_dev/index.php">Link to github:</a>
 
 <?php
 
@@ -38,7 +38,7 @@ Link to Github repo
 */
 
 $cmd1 = 'uptime';
-$out1 = "<p>"."<pre>".shell_exec($cmd1)."</pre>"."</p>";
+$out1 = "<p style="color:blue">"."<pre>".shell_exec($cmd1)."</pre>"."</p>";
 echo "<p>"."Server uptime info: $out1"."</p>";
 //echo "<br />";
 

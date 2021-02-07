@@ -38,7 +38,7 @@ Link to Github repo
 */
 
 $cmd1 = 'uptime';
-$out1 = "<p style='color:red;'>" "<pre>".shell_exec($cmd1)."</pre>" "</p>";
+$out1 = "<pre>".shell_exec($cmd1)."</pre>";
 echo  "<p>"."Server uptime info: $out1"."</p>";
 //echo "<br />";
 
@@ -49,7 +49,8 @@ echo "<p>"."CPU: $out2"."</p>";
 
 $cmd3 = 'lscpu | grep \'MHz\'';
 $out3 =  "<pre>".shell_exec($cmd3)."</pre>";
-echo "<p>"."CPU Speed: $out3"."</p>";
+echo "<p>"."CPU Speed: "."</p>";
+echo "<font color='yellow'>".$out3."</font>"
 //echo "<br />";
 
 $cmd4 = 'cat /etc/resolv.conf';

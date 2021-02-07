@@ -38,8 +38,8 @@ Link to Github repo
 */
 
 $cmd1 = 'uptime';
-$out1 = "<p style="color:blue">"."<pre>".shell_exec($cmd1)."</pre>"."</p>";
-echo "<p>"."Server uptime info: $out1"."</p>";
+$out1 = "<p style='color:red;'>" "<pre>".shell_exec($cmd1)."</pre>" "</p>";
+echo  "<p>"."Server uptime info: $out1"."</p>";
 //echo "<br />";
 
 $cmd2 = 'lscpu | grep \'Model name\'';

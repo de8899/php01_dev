@@ -51,9 +51,11 @@ $out3 =  "<pre>".shell_exec($cmd3)."</pre>";
 //echo "<p>"."Speed of the CPU is: $out3"."</p>";
 echo "<p>"."$out3"."</p>";
 
-$cmd4 = 'less /proc/meminfo | head -2';
+#$cmd4 = 'less /proc/meminfo | head -2';
+$cmd4 = 'free -m | head -1';
 $out4 = "<pre>".shell_exec($cmd4)."</pre>";
 echo "<p>"."Memory: $out4"."</p>";
+
 
 $cmd5 = 'cat /etc/resolv.conf';
 $out5 = "<pre>".shell_exec($cmd5)."</pre>";

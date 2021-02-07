@@ -7,12 +7,12 @@ body {
   background-color: Black;
 }
 h1 {
-  font-family: helvetica;
+  font-family: 'Courier New';
   color: #00ccff;
   text-align: left;
 }
 p {
-  font-family: helvetica;
+  font-family: 'Courier New';
   font-size: 20px;
   color: white;
 }

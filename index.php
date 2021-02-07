@@ -8,7 +8,7 @@ body {
 }
 h1 {
   font-family: helvetica;
-  color: 00FF99;
+  color: #00FF99;
   text-align: left;
 }
 p {

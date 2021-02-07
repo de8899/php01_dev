@@ -27,7 +27,7 @@ The code for this page is pulled directly from a github repo.
 New commits to the repo are automatically deployed to update the site within 1 minute. 
 Link to Github repo
 </p>
-<a href="https://github.com/de8899/php01_dev/index.php">Link to github:</a>
+<a href="https://github.com/de8899/php01_dev/blob/master/index.php">Link to github:</a>
 
 <?php
 
@@ -50,7 +50,7 @@ echo "<p>"."CPU: $out2"."</p>";
 $cmd3 = 'lscpu | grep \'MHz\'';
 $out3 =  "<pre>".shell_exec($cmd3)."</pre>";
 echo "<p>"."CPU Speed: "."</p>";
-echo  "$out3";
+echo  "<p>"."$out3"."</p>";
 //echo "<br />";
 
 $cmd4 = 'cat /etc/resolv.conf';

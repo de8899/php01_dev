@@ -25,9 +25,11 @@ p {
 <p>
 This site is a hosted WebApp on Azure.
 <br />
+PHP and bash commands provide details about the host of this site.
+<br />
 The code for this page is pulled directly from a github repo.
 <br />
-Commits to the repo immediately update the site. 
+Code commits to the repo immediately update the site. 
 </p>
 <a href="https://github.com/de8899/php01_dev/blob/master/index.php">Link to repo:</a>
 

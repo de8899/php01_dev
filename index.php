@@ -20,10 +20,13 @@ p {
 
 <body> 
 
-<h1>AzureWebSites WebApp Server Info</h1>
+<h1>AzureWebSites WebApp Host Info</h1>
 
 <p>
+This site is a hosted WebApp on Azure.
+<br />
 The code for this page is pulled directly from a github repo.
+<br />
 Commits to the repo immediately update the site. 
 </p>
 <a href="https://github.com/de8899/php01_dev/blob/master/index.php">Link to repo:</a>
@@ -32,35 +35,37 @@ Commits to the repo immediately update the site.
 
 // pre enables all of the output to be captured if muliple lines. 
 
-$cmd0 = 'cat /etc/os-release | grep -i \'pretty\' | cut -d "=" -f2';
-$out0 = "<pre>".shell_exec($cmd0)."</pre>";
-echo "<p>"."OS Info: $out0"."</p>";
+$cmdHost = 'hostname';
+$outHost = "<pre>".shell_exec($cmdHost)."</pre>";
+echo "<p>"."Hostname: $outHost"."</p>";
 
-$cmd1 = 'uptime';
-$out1 = "<pre>".shell_exec($cmd1)."</pre>";
-echo "<p>"."Server Uptime: $out1"."</p>";
+$cmdOs = 'cat /etc/os-release | grep -i \'pretty\' | cut -d "=" -f2';
+$outOs = "<pre>".shell_exec($cmdOs)."</pre>";
+echo "<p>"."OS Version: $outOs"."</p>";
+
+$cmdUptime = 'uptime';
+$outUptime = "<pre>".shell_exec($cmdUptime)."</pre>";
+echo "<p>"."Server Uptime: $outUptime"."</p>";
 //echo "<br >";
 
-$cmd2 = 'lscpu | grep \'Model name\'';
-$out2= "<pre>".shell_exec("$cmd2")."</pre>";
-echo "<p>"."CPU Info: $out2"."</p>";
+$cmdCpu = 'lscpu | grep \'Model name\'';
+$outCpu= "<pre>".shell_exec("$cmdCpu")."</pre>";
+echo "<p>"."CPU Info: $outCpu"."</p>";
 //echo "<br />";
 
-$cmd3 = 'lscpu | grep \'MHz\'';
-$out3 =  "<pre>".shell_exec($cmd3)."</pre>";
-//echo "<p>"."Speed of the CPU is: $out3"."</p>";
-echo "<p>"."$out3"."</p>";
+$cmdMhz = 'lscpu | grep \'MHz\'';
+$outMhz =  "<pre>".shell_exec($cmdMhz)."</pre>";
+echo "<p>"."$outMhz"."</p>";
 
-$cmd4 = 'vmstat';
-$out4 = "<pre>".shell_exec($cmd4)."</pre>";
-echo "<p>"."Stats: $out4"."</p>";
+$cmdMem = 'vmstat';
+$outMem = "<pre>".shell_exec($cmdMem)."</pre>";
+echo "<p>"."Memory Stats: $outMem"."</p>";
 
-$cmd5 = 'cat /etc/resolv.conf';
-$out5 = "<pre>".shell_exec($cmd5)."</pre>";
-echo "<p>"."Contents of /etc/resolv.conf: $out5"."</p>";
+$cmdDns = 'cat /etc/resolv.conf';
+$outDns = "<pre>".shell_exec($cmdDns)."</pre>";
+echo "<p>"."Contents of /etc/resolv.conf: $outDns"."</p>";
 
 ?>
 
 </body>
 </html>
-
